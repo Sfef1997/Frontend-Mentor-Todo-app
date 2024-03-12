@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Todo app built with React.js" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <title>Todo App Challenge</title>
+    <link rel="stylesheet" href="./styles.scss" />
+  </head>
+  <body>
+    <main class="App">
+          <img src="images/bg-desktop-light.jpg" alt="dark theme image" class="DarkThemeImg">
+          
+      <header class="Header">
+    
+        <button class="DarkThemeToggle">
+          <span class="DarkThemeToggle__activate">  <img src="images/icon-moon.svg" alt=""></span>
+          <span class="DarkThemeToggle__deactivate">  <img src="images/icon-sun.svg" alt=""></span>
+        </button>
+        <h2>TODO</h2>
+      </header>
+      <div class="App__wrapper">
+        <div class="TaskSearchBar">
+          <label for="search-input" class="TaskSearchBar__label">  </label>
+          <form class="TaskSearchBar__searchContent">
+            <input
+              id="search-input"
+              class="TaskSearchBar__input"
+              type="text"
+              placeholder="Add Tasks"
+              required
+            />
+            <button class="TaskSearchBar__button">Add</button>
+          </form>
+        </div>
+        <div class="TaskList">
+          <!-- <span class="TaskList__items"> </span> -->
+          <ul class="TaskList__list"></ul>
+          <footer>
+            <p  class="items--count">  </p>
+            <button class="TaskList__link" id="allBtn">
+               All 
+          </button> 
+            <button class="TaskList__link" id="activeBtn">
+               active 
+          </button> 
+            <button class="TaskList__link" id="completedBtn">
+               completed 
+          </button> 
+            <button class="TaskList__link" id="clearBtn">
+               clear completed 
+          </button> 
+          </footer>
+         
+        </div>
+      </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
+
+
+
+<!-- <img src="assets/icon-empty.svg" alt="Empty state Icon"> -->
+<!--
+ TODO
+  ✅ Add dark mode functionality
+  ✅ add active state to darkModeToggle button (change color & text)
+  ✅ initData from localStorage
+    ✅ Dark Theme
+    ✅ Task list & Empty state
+  ✅ add task functionality
+    ✅ add task by button
+    ✅ add task by enter key
+  ✅ delete task functionality
+  ✅ complete task functionality
+  ✅ show completed tasks functionality
+  ✅ Accessibility
+  - Suggestions
+    - Edit task by clicking on it
+    - Arrange tasks by drag & drop
+-->
